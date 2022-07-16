@@ -11,7 +11,4 @@ public class StudentRepository extends AbstractJpaDAO< Student > {
 	public StudentRepository() {
 		setClazz(Student.class );
 	}
-
-	
-
 }
