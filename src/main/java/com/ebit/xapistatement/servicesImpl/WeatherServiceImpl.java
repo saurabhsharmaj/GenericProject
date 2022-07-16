@@ -36,7 +36,7 @@ public class WeatherServiceImpl implements WeatherService {
 	@Override
 	public void addtoWeather(WeatherDto w) {
 		Weather w1 =new Weather();
-		w1.setId(12);
+		w1.setId(12l);
 		w1.setWId(w.getWId());
 		w1.setWeatherPresentName(w.getWeatherPresentName());
 		weatherRepository.save(w1);

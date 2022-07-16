@@ -11,9 +11,9 @@ import lombok.ToString;
 @Setter
 public class StudentDto {
 	
-	private Integer id;
+	private Long id;
 	private String sname;
-	public StudentDto(int id, String sname) {
+	public StudentDto(Long id, String sname) {
 		super();
 		this.id = id;
 		this.sname = sname;

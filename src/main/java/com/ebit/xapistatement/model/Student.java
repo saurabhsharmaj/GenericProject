@@ -4,9 +4,6 @@ import java.io.Serializable;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
 import javax.persistence.Table;
 
 import lombok.AllArgsConstructor;
@@ -22,12 +19,9 @@ import lombok.ToString;
 @AllArgsConstructor
 @Entity
 @Table(name="student")
-public class Student implements Serializable{
+public class Student extends BaseModel implements Serializable{
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	@Column(name= "id")
-	private Integer id;	
+		
 	
 	@Column(name= "s_name")
 	private String sname;

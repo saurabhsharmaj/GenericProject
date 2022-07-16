@@ -11,9 +11,9 @@ import lombok.ToString;
 @Setter
 public class WeatherDto {
 	
-	private Integer wId;
+	private Long wId;
 	private String weatherPresentName;
-	public WeatherDto(int wId, String weatherPresentName) {
+	public WeatherDto(Long wId, String weatherPresentName) {
 		super();
 		this.wId = wId;
 		this.weatherPresentName = weatherPresentName;
