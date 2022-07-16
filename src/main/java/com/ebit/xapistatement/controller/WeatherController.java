@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.RestController;
 import com.ebit.xapistatement.dto.WeatherDto;
 import com.ebit.xapistatement.model.Weather;
 import com.ebit.xapistatement.service.WeatherService;
-import com.ebit.xapistatement.servicesImpl.WeatherServiceImpl;
 
 @RestController
 public class WeatherController {

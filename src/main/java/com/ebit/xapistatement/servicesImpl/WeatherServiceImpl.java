@@ -18,14 +18,13 @@ public class WeatherServiceImpl implements WeatherService {
 
 	@Override
 	public Optional<Weather> findByWeatherId(Integer wid) {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return Optional.ofNullable(weatherRepository.findOne(wid));
 	}
 
 	@Override
 	public List<Weather> findAllRecodrs() {
-		// TODO Auto-generated method stub
-		return null;
+		return weatherRepository.findAll();
 	}
 
 	@Override

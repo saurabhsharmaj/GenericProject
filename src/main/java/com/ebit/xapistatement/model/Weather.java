@@ -1,5 +1,7 @@
 package com.ebit.xapistatement.model;
 
+import java.io.Serializable;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -20,7 +22,7 @@ import lombok.ToString;
 @AllArgsConstructor
 @Entity
 @Table(name="weather")
-public class Weather {
+public class Weather implements Serializable{
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
